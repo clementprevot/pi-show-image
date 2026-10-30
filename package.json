@@ -1,6 +1,6 @@
 {
 	"name": "@clementprevot/pi-show-image",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Pi extension that lets the agent show you a local image inline in the terminal, without sending the image to the model",
 	"keywords": [
 		"pi-package",
