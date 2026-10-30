@@ -1,0 +1,50 @@
+{
+	"name": "@clementprevot/pi-show-image",
+	"version": "0.1.0",
+	"description": "Pi extension that lets the agent show you a local image inline in the terminal, without sending the image to the model",
+	"keywords": [
+		"pi-package",
+		"pi-extension",
+		"image",
+		"screenshot",
+		"kitty",
+		"iterm2",
+		"tui"
+	],
+	"license": "MIT",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/clementprevot/pi-show-image.git"
+	},
+	"engines": {
+		"node": ">=22.6"
+	},
+	"files": [
+		"index.ts"
+	],
+	"pi": {
+		"extensions": [
+			"./index.ts"
+		]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "*",
+		"@earendil-works/pi-tui": "*",
+		"typebox": "*"
+	},
+	"devDependencies": {
+		"@earendil-works/pi-coding-agent": "*",
+		"@earendil-works/pi-tui": "*",
+		"@types/node": "^24.0.0",
+		"typebox": "*",
+		"typescript": "^5.9.0"
+	},
+	"scripts": {
+		"test": "node --test test/*.test.ts",
+		"typecheck": "tsc --noEmit"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
